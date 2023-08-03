@@ -17,7 +17,8 @@ int count_nodes(const binary_tree_t *tree)
 }
 
 /**
- * is_complete - Recursive helper function to check if a binary tree is complete.
+ * is_complete - Recursive helper function to check if a
+ * binary tree is complete.
  *
  * @tree: Pointer to the root node of the tree to check.
  * @index: Current index of the node.
@@ -34,7 +35,7 @@ int is_complete(const binary_tree_t *tree, int index, int count)
 		return (0);
 
 	return (is_complete(tree->left, 2 * index + 1, count) &&
-	        is_complete(tree->right, 2 * index + 2, count));
+			is_complete(tree->right, 2 * index + 2, count));
 }
 
 /**
